@@ -7,6 +7,7 @@ class Posts extends Component {
     posts: [],
   };
   componentDidMount() {
+    console.log(this.props)
     console.log("[Blog] componentDidMount before get axios");
     axios
       .get("/posts")
@@ -38,6 +39,7 @@ class Posts extends Component {
             key={post.id}
             title={post.title}
             author={post.author}
+            // {...this.props}
             clicked={() => this.postSelectedHandler(post.id)}
           />
         );
