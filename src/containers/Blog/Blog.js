@@ -38,7 +38,7 @@ class Blog extends Component {
         <Route path='/' render={()=><h1>Home2</h1>}/> */}
         <Route path='/' exact component={Posts}/>
         <Route path='/new-post' component={NewPost}/>
-        <Route path='/:id' exact component={FullPost}/>
+        <Route path='/:id' exact component={FullPost} {...this.props} hi='hi'/>
         {/* <Route path='/' render={()=><Posts/>}/> */}
          {/* <Posts /> */}
       </div>
