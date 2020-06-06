@@ -12,6 +12,7 @@ class NewPost extends Component {
   };
 
   componentDidMount() {
+      // alternative use of guards (if userUnauthenticaed = this.props.history.replace('/posts'))
     console.log(this.props);
   }
 
